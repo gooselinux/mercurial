@@ -1,0 +1,471 @@
+diff -Nur mercurial-1.4-orig/contrib/convert-repo mercurial-1.4/contrib/convert-repo
+--- mercurial-1.4-orig/contrib/convert-repo	2010-03-12 10:21:49.076321826 +0100
++++ mercurial-1.4/contrib/convert-repo	2010-03-12 10:27:01.162218985 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # Wrapper script around the convert.py hgext extension
+ # for foreign SCM conversion to mercurial format.
+diff -Nur mercurial-1.4-orig/contrib/dumprevlog mercurial-1.4/contrib/dumprevlog
+--- mercurial-1.4-orig/contrib/dumprevlog	2010-03-12 10:21:49.075321901 +0100
++++ mercurial-1.4/contrib/dumprevlog	2010-03-12 10:27:01.138215477 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ # Dump revlogs as raw data stream
+ # $ find .hg/store/ -name "*.i" | xargs dumprevlog > repo.dump
+ 
+diff -Nur mercurial-1.4-orig/contrib/hgdiff mercurial-1.4/contrib/hgdiff
+--- mercurial-1.4-orig/contrib/hgdiff	2010-03-12 10:21:49.075321901 +0100
++++ mercurial-1.4/contrib/hgdiff	2010-03-12 10:27:01.140215118 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ import os, sys, struct, stat
+ import difflib
+diff -Nur mercurial-1.4-orig/contrib/hg-ssh mercurial-1.4/contrib/hg-ssh
+--- mercurial-1.4-orig/contrib/hg-ssh	2010-03-12 10:21:49.076321826 +0100
++++ mercurial-1.4/contrib/hg-ssh	2010-03-12 10:27:01.155219510 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # Copyright 2005-2007 by Intevation GmbH <intevation@intevation.de>
+ #
+diff -Nur mercurial-1.4-orig/contrib/hgwebdir.fcgi mercurial-1.4/contrib/hgwebdir.fcgi
+--- mercurial-1.4-orig/contrib/hgwebdir.fcgi	2010-03-12 10:21:49.074321208 +0100
++++ mercurial-1.4/contrib/hgwebdir.fcgi	2010-03-12 10:27:01.136220097 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # An example CGI script to export multiple hgweb repos, edit as necessary
+ 
+diff -Nur mercurial-1.4-orig/contrib/rewrite-log mercurial-1.4/contrib/rewrite-log
+--- mercurial-1.4-orig/contrib/rewrite-log	2010-03-12 10:21:49.075321901 +0100
++++ mercurial-1.4/contrib/rewrite-log	2010-03-12 10:27:01.148217591 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ import sys, os
+ from mercurial import revlog, transaction, node, util
+ 
+diff -Nur mercurial-1.4-orig/contrib/shrink-revlog.py mercurial-1.4/contrib/shrink-revlog.py
+--- mercurial-1.4-orig/contrib/shrink-revlog.py	2010-03-12 10:21:49.076321826 +0100
++++ mercurial-1.4/contrib/shrink-revlog.py	2010-03-12 10:27:01.158217260 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ """\
+ Reorder a revlog (by default the the manifest file in the current
+diff -Nur mercurial-1.4-orig/contrib/simplemerge mercurial-1.4/contrib/simplemerge
+--- mercurial-1.4-orig/contrib/simplemerge	2010-03-12 10:21:49.075321901 +0100
++++ mercurial-1.4/contrib/simplemerge	2010-03-12 10:27:01.151218134 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ from mercurial import demandimport
+ demandimport.enable()
+diff -Nur mercurial-1.4-orig/contrib/undumprevlog mercurial-1.4/contrib/undumprevlog
+--- mercurial-1.4-orig/contrib/undumprevlog	2010-03-12 10:21:49.074321208 +0100
++++ mercurial-1.4/contrib/undumprevlog	2010-03-12 10:27:01.134196082 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ # Undump a dump from dumprevlog
+ # $ hg init
+ # $ undumprevlog < repo.dump
+diff -Nur mercurial-1.4-orig/doc/rst2man.py mercurial-1.4/doc/rst2man.py
+--- mercurial-1.4-orig/doc/rst2man.py	2010-03-12 10:21:49.039324882 +0100
++++ mercurial-1.4/doc/rst2man.py	2010-03-12 10:27:01.048321961 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ # -*- coding: utf-8 -*-
+ # $Id: manpage.py 6110 2009-08-31 14:40:33Z grubert $
+ # Author: Engelbert Gruber <grubert@users.sourceforge.net>
+diff -Nur mercurial-1.4-orig/hg mercurial-1.4/hg
+--- mercurial-1.4-orig/hg	2010-03-12 10:21:49.041321520 +0100
++++ mercurial-1.4/hg	2010-03-12 10:27:01.052321661 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # mercurial - scalable distributed SCM
+ #
+diff -Nur mercurial-1.4-orig/hgweb.cgi mercurial-1.4/hgweb.cgi
+--- mercurial-1.4-orig/hgweb.cgi	2010-03-12 10:21:49.041321520 +0100
++++ mercurial-1.4/hgweb.cgi	2010-03-12 10:27:01.050321043 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # An example CGI script to use hgweb, edit as necessary
+ 
+diff -Nur mercurial-1.4-orig/hgwebdir.cgi mercurial-1.4/hgwebdir.cgi
+--- mercurial-1.4-orig/hgwebdir.cgi	2010-03-12 10:21:49.081322638 +0100
++++ mercurial-1.4/hgwebdir.cgi	2010-03-12 10:27:01.173218300 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # An example CGI script to export multiple hgweb repos, edit as necessary
+ 
+diff -Nur mercurial-1.4-orig/i18n/hggettext mercurial-1.4/i18n/hggettext
+--- mercurial-1.4-orig/i18n/hggettext	2010-03-12 10:21:49.080321875 +0100
++++ mercurial-1.4/i18n/hggettext	2010-03-12 10:27:01.165204792 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # hggettext - carefully extract docstrings for Mercurial
+ #
+diff -Nur mercurial-1.4-orig/mercurial/lsprof.py mercurial-1.4/mercurial/lsprof.py
+--- mercurial-1.4-orig/mercurial/lsprof.py	2010-03-12 10:21:49.037321610 +0100
++++ mercurial-1.4/mercurial/lsprof.py	2010-03-12 10:27:01.041322975 +0100
+@@ -1,4 +1,4 @@
+-#! /usr/bin/env python
++#! /usr/bin/python
+ 
+ import sys
+ from _lsprof import Profiler, profiler_entry
+diff -Nur mercurial-1.4-orig/mercurial/simplemerge.py mercurial-1.4/mercurial/simplemerge.py
+--- mercurial-1.4-orig/mercurial/simplemerge.py	2010-03-12 10:21:49.030323882 +0100
++++ mercurial-1.4/mercurial/simplemerge.py	2010-03-12 10:27:01.012351271 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ # Copyright (C) 2004, 2005 Canonical Ltd
+ #
+ # This program is free software; you can redistribute it and/or modify
+diff -Nur mercurial-1.4-orig/setup.py mercurial-1.4/setup.py
+--- mercurial-1.4-orig/setup.py	2010-03-12 10:21:49.081322638 +0100
++++ mercurial-1.4/setup.py	2010-03-12 10:27:01.169219088 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # This is the mercurial setup script.
+ #
+diff -Nur mercurial-1.4-orig/tests/coverage.py mercurial-1.4/tests/coverage.py
+--- mercurial-1.4-orig/tests/coverage.py	2010-03-12 10:21:49.048321553 +0100
++++ mercurial-1.4/tests/coverage.py	2010-03-12 10:27:01.060321061 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ #             Perforce Defect Tracking Integration Project
+ #              <http://www.ravenbrook.com/project/p4dti/>
+diff -Nur mercurial-1.4-orig/tests/get-with-headers.py mercurial-1.4/tests/get-with-headers.py
+--- mercurial-1.4-orig/tests/get-with-headers.py	2010-03-12 10:21:49.047321628 +0100
++++ mercurial-1.4/tests/get-with-headers.py	2010-03-12 10:27:01.057321077 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ """This does HTTP GET requests given a host:port and path and returns
+ a subset of the headers plus the body of the result."""
+diff -Nur mercurial-1.4-orig/tests/hghave mercurial-1.4/tests/hghave
+--- mercurial-1.4-orig/tests/hghave	2010-03-12 10:21:49.062321550 +0100
++++ mercurial-1.4/tests/hghave	2010-03-12 10:27:01.117320767 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ """Test the running system for features availability. Exit with zero
+ if all features are there, non-zero otherwise. If a feature name is
+ prefixed with "no-", the absence of feature is tested.
+diff -Nur mercurial-1.4-orig/tests/killdaemons.py mercurial-1.4/tests/killdaemons.py
+--- mercurial-1.4-orig/tests/killdaemons.py	2010-03-12 10:21:49.074321208 +0100
++++ mercurial-1.4/tests/killdaemons.py	2010-03-12 10:27:01.131321463 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ import os, sys, time, errno, signal
+ 
+diff -Nur mercurial-1.4-orig/tests/md5sum.py mercurial-1.4/tests/md5sum.py
+--- mercurial-1.4-orig/tests/md5sum.py	2010-03-12 10:21:49.056321651 +0100
++++ mercurial-1.4/tests/md5sum.py	2010-03-12 10:27:01.098321214 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # Based on python's Tools/scripts/md5sum.py
+ #
+diff -Nur mercurial-1.4-orig/tests/printrepr.py mercurial-1.4/tests/printrepr.py
+--- mercurial-1.4-orig/tests/printrepr.py	2010-03-12 10:21:49.058321641 +0100
++++ mercurial-1.4/tests/printrepr.py	2010-03-12 10:27:01.100321134 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # Copyright 2009 Matt Mackall <mpm@selenic.com> and others
+ #
+diff -Nur mercurial-1.4-orig/tests/readlink.py mercurial-1.4/tests/readlink.py
+--- mercurial-1.4-orig/tests/readlink.py	2010-03-12 10:21:49.055321377 +0100
++++ mercurial-1.4/tests/readlink.py	2010-03-12 10:27:01.087320991 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ import errno, os, sys
+ 
+diff -Nur mercurial-1.4-orig/tests/run-tests.py mercurial-1.4/tests/run-tests.py
+--- mercurial-1.4-orig/tests/run-tests.py	2010-03-12 10:21:49.054323198 +0100
++++ mercurial-1.4/tests/run-tests.py	2010-03-12 10:27:27.553198622 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # run-tests.py - Run a set of tests on Mercurial
+ #
+@@ -469,7 +469,7 @@
+         firstline = ''
+     lctest = test.lower()
+ 
+-    if lctest.endswith('.py') or firstline == '#!/usr/bin/env python':
++    if lctest.endswith('.py') or firstline == '#!/usr/bin/python':
+         py3kswitch = options.py3k_warnings and ' -3' or ''
+         cmd = '%s%s "%s"' % (PYTHON, py3kswitch, testpath)
+     elif lctest.endswith('.bat'):
+diff -Nur mercurial-1.4-orig/tests/svn-safe-append.py mercurial-1.4/tests/svn-safe-append.py
+--- mercurial-1.4-orig/tests/svn-safe-append.py	2010-03-12 10:21:49.065321534 +0100
++++ mercurial-1.4/tests/svn-safe-append.py	2010-03-12 10:27:01.124321848 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ __doc__ = """Same as `echo a >> b`, but ensures a changed mtime of b.
+ Without this svn will not detect workspace changes."""
+diff -Nur mercurial-1.4-orig/tests/test-bdiff.py mercurial-1.4/tests/test-bdiff.py
+--- mercurial-1.4-orig/tests/test-bdiff.py	2010-03-12 10:21:49.049321618 +0100
++++ mercurial-1.4/tests/test-bdiff.py	2010-03-12 10:27:01.069321224 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ import struct
+ from mercurial import bdiff, mpatch
+diff -Nur mercurial-1.4-orig/tests/test-bisect mercurial-1.4/tests/test-bisect
+--- mercurial-1.4-orig/tests/test-bisect	2010-03-12 10:21:49.049321618 +0100
++++ mercurial-1.4/tests/test-bisect	2010-03-12 10:27:01.065320825 +0100
+@@ -91,7 +91,7 @@
+ 
+ echo % test bisecting command
+ cat > script.py <<EOF
+-#!/usr/bin/env python
++#!/usr/bin/python
+ import sys
+ from mercurial import ui, hg
+ repo = hg.repository(ui.ui(), '.')
+diff -Nur mercurial-1.4-orig/tests/test-clone-cgi mercurial-1.4/tests/test-clone-cgi
+--- mercurial-1.4-orig/tests/test-clone-cgi	2010-03-12 10:21:49.052321672 +0100
++++ mercurial-1.4/tests/test-clone-cgi	2010-03-12 10:27:01.074321128 +0100
+@@ -9,7 +9,7 @@
+ cd ..
+ 
+ cat >hgweb.cgi <<HGWEB
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # An example CGI script to use hgweb, edit as necessary
+ 
+diff -Nur mercurial-1.4-orig/tests/test-demandimport.py mercurial-1.4/tests/test-demandimport.py
+--- mercurial-1.4-orig/tests/test-demandimport.py	2010-03-12 10:21:49.059321635 +0100
++++ mercurial-1.4/tests/test-demandimport.py	2010-03-12 10:27:01.107321237 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ from mercurial import demandimport
+ demandimport.enable()
+diff -Nur mercurial-1.4-orig/tests/test-extdiff mercurial-1.4/tests/test-extdiff
+--- mercurial-1.4-orig/tests/test-extdiff	2010-03-12 10:21:49.073321632 +0100
++++ mercurial-1.4/tests/test-extdiff	2010-03-12 10:27:01.129321054 +0100
+@@ -55,7 +55,7 @@
+ echo '% edit with extdiff -p'
+ # prepare custom diff/edit tool
+ cat > differ.py << EOT
+-#!/usr/bin/env python
++#!/usr/bin/python
+ import time
+ time.sleep(1) # avoid unchanged-timestamp problems
+ file('a/a', 'ab').write('edited\n')
+diff -Nur mercurial-1.4-orig/tests/test-extension mercurial-1.4/tests/test-extension
+--- mercurial-1.4-orig/tests/test-extension	2010-03-12 10:21:49.053322016 +0100
++++ mercurial-1.4/tests/test-extension	2010-03-12 10:27:01.076321117 +0100
+@@ -78,7 +78,7 @@
+ # check hgweb's load order
+ echo '% hgweb.cgi'
+ cat > hgweb.cgi <<EOF
+-#!/usr/bin/env python
++#!/usr/bin/python
+ from mercurial import demandimport; demandimport.enable()
+ from mercurial.hgweb import hgweb
+ from mercurial.hgweb import wsgicgi
+diff -Nur mercurial-1.4-orig/tests/test-hg-parseurl.py mercurial-1.4/tests/test-hg-parseurl.py
+--- mercurial-1.4-orig/tests/test-hg-parseurl.py	2010-03-12 10:21:49.047321628 +0100
++++ mercurial-1.4/tests/test-hg-parseurl.py	2010-03-12 10:27:01.054321511 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ from mercurial.hg import parseurl
+ 
+diff -Nur mercurial-1.4-orig/tests/test-highlight mercurial-1.4/tests/test-highlight
+--- mercurial-1.4-orig/tests/test-highlight	2010-03-12 10:21:49.054323198 +0100
++++ mercurial-1.4/tests/test-highlight	2010-03-12 10:27:01.078321177 +0100
+@@ -13,7 +13,7 @@
+ cd test
+ # create random Python file to exercise Pygments
+ cat <<EOF > primes.py
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ """Fun with generators. Corresponding Haskell implementation:
+ 
+diff -Nur mercurial-1.4-orig/tests/test-highlight.out mercurial-1.4/tests/test-highlight.out
+--- mercurial-1.4-orig/tests/test-highlight.out	2010-03-12 10:21:49.060321840 +0100
++++ mercurial-1.4/tests/test-highlight.out	2010-03-12 10:27:27.567196943 +0100
+@@ -77,7 +77,7 @@
+ <div class="overflow">
+ <div class="sourcefirst"> line source</div>
+ 
+-<div class="parity0 source"><a href="#l1" id="l1">     1</a> <span class="c">#!/usr/bin/env python</span></div>
++<div class="parity0 source"><a href="#l1" id="l1">     1</a> <span class="c">#!/usr/bin/python</span></div>
+ <div class="parity1 source"><a href="#l2" id="l2">     2</a> </div>
+ <div class="parity0 source"><a href="#l3" id="l3">     3</a> <span class="sd">&quot;&quot;&quot;Fun with generators. Corresponding Haskell implementation:</span></div>
+ <div class="parity1 source"><a href="#l4" id="l4">     4</a> </div>
+@@ -206,7 +206,7 @@
+ <a href="/annotate/853dcd4de2a6/primes.py#1"
+ title="853dcd4de2a6: a">test@0</a>
+ </td>
+-<td class="source"><a href="#l1" id="l1">     1</a> <span class="c">#!/usr/bin/env python</span></td>
++<td class="source"><a href="#l1" id="l1">     1</a> <span class="c">#!/usr/bin/python</span></td>
+ </tr>
+ <tr class="parity1">
+ <td class="annotate">
+diff -Nur mercurial-1.4-orig/tests/test-hybridencode.py mercurial-1.4/tests/test-hybridencode.py
+--- mercurial-1.4-orig/tests/test-hybridencode.py	2010-03-12 10:21:49.067321663 +0100
++++ mercurial-1.4/tests/test-hybridencode.py	2010-03-12 10:27:01.126321349 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ from mercurial import store
+ 
+diff -Nur mercurial-1.4-orig/tests/test-merge-symlinks mercurial-1.4/tests/test-merge-symlinks
+--- mercurial-1.4-orig/tests/test-merge-symlinks	2010-03-12 10:21:49.061321415 +0100
++++ mercurial-1.4/tests/test-merge-symlinks	2010-03-12 10:27:01.115321266 +0100
+@@ -1,7 +1,7 @@
+ #!/bin/sh
+ 
+ cat > echo.py <<EOF
+-#!/usr/bin/env python
++#!/usr/bin/python
+ import os, sys
+ try:
+     import msvcrt
+diff -Nur mercurial-1.4-orig/tests/test-minirst.py mercurial-1.4/tests/test-minirst.py
+--- mercurial-1.4-orig/tests/test-minirst.py	2010-03-12 10:21:49.056321651 +0100
++++ mercurial-1.4/tests/test-minirst.py	2010-03-12 10:27:01.096321015 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ from mercurial import minirst
+ 
+diff -Nur mercurial-1.4-orig/tests/test-newcgi mercurial-1.4/tests/test-newcgi
+--- mercurial-1.4-orig/tests/test-newcgi	2010-03-12 10:21:49.063321125 +0100
++++ mercurial-1.4/tests/test-newcgi	2010-03-12 10:27:01.121321165 +0100
+@@ -5,7 +5,7 @@
+ hg init test
+ 
+ cat >hgweb.cgi <<HGWEB
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # An example CGI script to use hgweb, edit as necessary
+ 
+@@ -30,7 +30,7 @@
+ HGWEBDIRCONF
+ 
+ cat >hgwebdir.cgi <<HGWEBDIR
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # An example CGI script to export multiple hgweb repos, edit as necessary
+ 
+diff -Nur mercurial-1.4-orig/tests/test-newercgi mercurial-1.4/tests/test-newercgi
+--- mercurial-1.4-orig/tests/test-newercgi	2010-03-12 10:21:49.058321641 +0100
++++ mercurial-1.4/tests/test-newercgi	2010-03-12 10:27:01.104321113 +0100
+@@ -4,7 +4,7 @@
+ hg init test
+ 
+ cat >hgweb.cgi <<HGWEB
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # An example CGI script to use hgweb, edit as necessary
+ 
+@@ -26,7 +26,7 @@
+ HGWEBDIRCONF
+ 
+ cat >hgwebdir.cgi <<HGWEBDIR
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # An example CGI script to export multiple hgweb repos, edit as necessary
+ 
+diff -Nur mercurial-1.4-orig/tests/test-oldcgi mercurial-1.4/tests/test-oldcgi
+--- mercurial-1.4-orig/tests/test-oldcgi	2010-03-12 10:21:49.056321651 +0100
++++ mercurial-1.4/tests/test-oldcgi	2010-03-12 10:27:01.093321170 +0100
+@@ -4,7 +4,7 @@
+ hg init test
+ 
+ cat >hgweb.cgi <<HGWEB
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # An example CGI script to use hgweb, edit as necessary
+ 
+@@ -25,7 +25,7 @@
+ HGWEBDIRCONF
+ 
+ cat >hgwebdir.cgi <<HGWEBDIR
+-#!/usr/bin/env python
++#!/usr/bin/python
+ #
+ # An example CGI script to export multiple hgweb repos, edit as necessary
+ 
+diff -Nur mercurial-1.4-orig/tests/test-ui-config.py mercurial-1.4/tests/test-ui-config.py
+--- mercurial-1.4-orig/tests/test-ui-config.py	2010-03-12 10:21:49.049321618 +0100
++++ mercurial-1.4/tests/test-ui-config.py	2010-03-12 10:27:01.067321374 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ from mercurial import ui, dispatch, error
+ 
+diff -Nur mercurial-1.4-orig/tests/test-ui-verbosity.py mercurial-1.4/tests/test-ui-verbosity.py
+--- mercurial-1.4-orig/tests/test-ui-verbosity.py	2010-03-12 10:21:49.051321537 +0100
++++ mercurial-1.4/tests/test-ui-verbosity.py	2010-03-12 10:27:01.071321143 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ import os
+ from mercurial import ui
+diff -Nur mercurial-1.4-orig/tests/tinyproxy.py mercurial-1.4/tests/tinyproxy.py
+--- mercurial-1.4-orig/tests/tinyproxy.py	2010-03-12 10:21:49.049321618 +0100
++++ mercurial-1.4/tests/tinyproxy.py	2010-03-12 10:27:01.062320911 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ __doc__ = """Tiny HTTP Proxy.
+ 
